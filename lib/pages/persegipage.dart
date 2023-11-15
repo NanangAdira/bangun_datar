@@ -75,7 +75,10 @@ final PersegiController _persegiController = Get.put(PersegiController());
               ],
             ),
 
-            Obx(() => Text(_persegiController.hasil.value,style: TextStyle(color: Colors.green)))
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Obx(() => Text(_persegiController.hasil.value,style: TextStyle(color: Colors.green))),
+            )
           ],
         ));
   }
